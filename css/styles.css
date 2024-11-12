@@ -45,15 +45,19 @@ a {
 /* #endregion */
 
 /* #region header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav {
   display: flex;
   flex-grow: 1;
+  align-items: center;
 }
 
 .logo {
@@ -65,7 +69,6 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  align-items: center;
 }
 
 .top {
@@ -78,7 +81,7 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 24px;
+  gap: 40px;
 }
 
 .nav-list-item {
@@ -131,13 +134,13 @@ a {
   line-height: 1.07;
   text-align: center;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 }
 
 .btn {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -223,19 +226,21 @@ a {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.block-team {
+  padding: 32px 0;
+}
+
 .section-two-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 .section-two-text {
   text-align: center;
-  margin-bottom: 32px;
 }
 /* #endregion */
 
@@ -257,17 +262,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .section-three-item {
+  width: ((100% - 48px) / 3);
 }
 
 .block {
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 .section-three-subtitle {
@@ -282,10 +287,10 @@ a {
 }
 /* #endregion */
 
-/* #region  */
+/* #region  footer*/
 .footer {
   background-color: #2e2f42;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .logo .studio-footer {
@@ -294,6 +299,7 @@ a {
 
 .bottom {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-text {
